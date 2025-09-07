@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreelanceHub | Fiverr Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background elements -->
+    <div class="bg-elements">
+        <div class="bg-pattern"></div>
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+        <div class="floating-icon floating-icon-1"><i class="fas fa-paint-brush"></i></div>
+        <div class="floating-icon floating-icon-2"><i class="fas fa-laptop-code"></i></div>
+        <div class="floating-icon floating-icon-3"><i class="fas fa-chart-line"></i></div>
+        <div class="floating-icon floating-icon-4"><i class="fas fa-pencil-alt"></i></div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <a href="#" class="logo">
                     <i class="fas fa-rocket"></i>
                     <span>FreelanceHub</span>
-                </div>
+                </a>
                 
                 <nav>
                     <ul>
@@ -246,14 +258,14 @@
                 <h2>Log In to Your Account</h2>
                 <button class="close-modal">&times;</button>
             </div>
-            <form>
+            <form id="loginForm">
                 <div class="form-group">
                     <label for="loginEmail">Email</label>
-                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
                     <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
             </form>
@@ -270,22 +282,23 @@
                 <h2>Create an Account</h2>
                 <button class="close-modal">&times;</button>
             </div>
-            <form>
+            <form id="signupForm">
                 <div class="form-group">
                     <label for="signupName">Full Name</label>
-                    <input type="text" id="signupName" placeholder="Enter your full name">
+                    <input type="text" id="signupName" placeholder="Enter your full name" required>
                 </div>
                 <div class="form-group">
                     <label for="signupEmail">Email</label>
-                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
                     <label for="signupPassword">Password</label>
-                    <input type="password" id="signupPassword" placeholder="Create a password">
+                    <input type="password" id="signupPassword" placeholder="Create a password" required minlength="6">
                 </div>
                 <div class="form-group">
                     <label for="userType">I am a:</label>
-                    <select id="userType">
+                    <select id="userType" required>
+                        <option value="">Select account type</option>
                         <option value="client">Client looking to hire</option>
                         <option value="freelancer">Freelancer looking for work</option>
                     </select>
@@ -298,6 +311,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+
+   
 </body>
 </html>
