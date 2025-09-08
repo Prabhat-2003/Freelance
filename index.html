@@ -31,11 +31,11 @@
                 
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">Find Work</a></li>
-                        <li><a href="#">Find Freelancers</a></li>
-                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="categories">Categories</a></li>
+                        <li><a href="#" data-page="find-work">Find Work</a></li>
+                        <li><a href="#" data-page="find-freelancers">Find Freelancers</a></li>
+                        <li><a href="#" data-page="how-it-works">How It Works</a></li>
                     </ul>
                 </nav>
                 
@@ -47,164 +47,241 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Find the perfect freelance services for your business</h1>
-            <p>Connect with thousands of skilled freelancers and get your projects done efficiently</p>
-            
-            <div class="search-bar">
-                <input type="text" placeholder="Search for any service...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-        <div class="video-background">
-    <video autoplay muted loop playsinline id="bgVideo">
-        <source src="bac.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="video-overlay"></div>
-</div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="container">
-        <h2 class="section-title">Popular Categories</h2>
-        
-        <div class="categories">
-            <div class="category-card">
-                <div class="category-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h3>Web Development</h3>
-                <p>Website, app development and programming services</p>
-            </div>
-            
-            <div class="category-card">
-                <div class="category-icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3>Design & Creative</h3>
-                <p>Logo design, UI/UX, illustration and video editing</p>
-            </div>
-            
-            <div class="category-card">
-                <div class="category-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Digital Marketing</h3>
-                <p>SEO, social media marketing and content creation</p>
-            </div>
-            
-            <div class="category-card">
-                <div class="category-icon">
-                    <i class="fas fa-pencil-alt"></i>
-                </div>
-                <h3>Writing & Translation</h3>
-                <p>Content writing, translation and proofreading</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="container">
-        <h2 class="section-title">Popular Services</h2>
-        
-        <div class="services">
-            <div class="service-card">
-                <div class="service-image">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="service-content">
-                    <h3 class="service-title">I will design your website UI/UX</h3>
-                    <div class="service-seller">
-                        <div class="seller-avatar">JD</div>
-                        <span>John Designer</span>
-                    </div>
-                    <div class="service-meta">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.9 (128)</span>
-                        </div>
-                        <div class="price">Starting at $50</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-image">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="service-content">
-                    <h3 class="service-title">I will develop a responsive website</h3>
-                    <div class="service-seller">
-                        <div class="seller-avatar">SD</div>
-                        <span>Sarah Developer</span>
-                    </div>
-                    <div class="service-meta">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.8 (96)</span>
-                        </div>
-                        <div class="price">Starting at $100</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-image">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="service-content">
-                    <h3 class="service-title">I will do SEO for your website</h3>
-                    <div class="service-seller">
-                        <div class="seller-avatar">ME</div>
-                        <span>Mike Expert</span>
-                    </div>
-                    <div class="service-meta">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.7 (87)</span>
-                        </div>
-                        <div class="price">Starting at $75</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How it Works Section -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Find a Service</h3>
-                    <p>Search our catalog of services and find the perfect freelancer for your project.</p>
-                </div>
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Home Page (Default) -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
                 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Place an Order</h3>
-                    <p>Provide project details and requirements to get started with your selected freelancer.</p>
+                <div class="container">
+                    <h1>Find the perfect freelance services for your business</h1>
+                    <p>Connect with thousands of skilled freelancers and get your projects done efficiently</p>
+                    
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for any service...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
+                 <div class="video-background">
+                    <video autoplay muted loop playsinline id="bgVideo">
+                        <source src="bac.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+               
+            </section>
+
+            <!-- Categories Section -->
+            <section class="container">
+                <h2 class="section-title">Popular Categories</h2>
                 
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Make Payment</h3>
-                    <p>Pay securely through our platform. Funds are held until you approve the work.</p>
+                <div class="categories">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Website, app development and programming services</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Design & Creative</h3>
+                        <p>Logo design, UI/UX, illustration and video editing</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>SEO, social media marketing and content creation</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>Writing & Translation</h3>
+                        <p>Content writing, translation and proofreading</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Services</h3>
+                        <p>AI development, chatbots, and machine learning</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Admin & Support</h3>
+                        <p>Virtual assistance and customer support</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Finance & Accounting</h3>
+                        <p>Bookkeeping, financial consulting and tax services</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Legal</h3>
+                        <p>Legal consulting, contract review and documentation</p>
+                    </div>
                 </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="container">
+                <h2 class="section-title">Popular Services</h2>
                 
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Receive Delivery</h3>
-                    <p>Get your completed project and release payment when you're satisfied.</p>
+                <div class="services" id="services-container">
+                    <!-- Services will be loaded dynamically -->
                 </div>
-            </div>
+            </section>
+
+            <!-- How it Works Section -->
+            <section class="how-it-works">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Find a Service</h3>
+                            <p>Search our catalog of services and find the perfect freelancer for your project.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Place an Order</h3>
+                            <p>Provide project details and requirements to get started with your selected freelancer.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Make Payment</h3>
+                            <p>Pay securely through our platform. Funds are held until you approve the work.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Receive Delivery</h3>
+                            <p>Get your completed project and release payment when you're satisfied.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section class="container">
+                <h2 class="section-title">Client Reviews</h2>
+                
+                <div class="reviews" id="reviews-container">
+                    <!-- Reviews will be loaded dynamically -->
+                </div>
+            </section>
         </div>
-    </section>
+
+        <!-- Categories Page -->
+        <div id="categories-page" class="page">
+            <section class="container">
+                <h2 class="section-title">All Categories</h2>
+                
+                <div class="categories-grid" id="categories-container">
+                    <!-- Categories will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Find Work Page -->
+        <div id="find-work-page" class="page">
+            <section class="container">
+                <h2 class="section-title">Find Work Opportunities</h2>
+                
+                <div class="jobs-container" id="jobs-container">
+                    <!-- Jobs will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Find Freelancers Page -->
+        <div id="find-freelancers-page" class="page">
+            <section class="container">
+                <h2 class="section-title">Find Skilled Freelancers</h2>
+                
+                <div class="freelancers-container" id="freelancers-container">
+                    <!-- Freelancers will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+
+        <!-- How It Works Page -->
+        <div id="how-it-works-page" class="page">
+            <section class="container">
+                <h2 class="section-title">How FreelanceHub Works</h2>
+                
+                <div class="detailed-steps">
+                    <div class="detailed-step">
+                        <div class="step-visual">
+                            <div class="step-number">1</div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Find the Right Service</h3>
+                            <p>Browse through our extensive catalog of services or use our search functionality to find exactly what you need. Filter by category, price, delivery time, or seller rating to find the perfect match for your project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-step">
+                        <div class="step-visual">
+                            <div class="step-number">2</div>
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Communicate Your Needs</h3>
+                            <p>Once you've found a service you like, contact the seller to discuss your project requirements. Our messaging system makes it easy to share files, ask questions, and clarify details before placing an order.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-step">
+                        <div class="step-visual">
+                            <div class="step-number">3</div>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Secure Payment</h3>
+                            <p>When you're ready to proceed, place your order and make a secure payment. Your funds are held in escrow until you approve the completed work, ensuring you only pay for satisfactory results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-step">
+                        <div class="step-visual">
+                            <div class="step-number">4</div>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Receive & Approve Work</h3>
+                            <p>The seller will deliver the completed work according to the agreed timeline. Review the delivery and request revisions if needed. Once you're satisfied, approve the work and release payment.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>
