@@ -711,7 +711,7 @@ footer {
       font-size: 18px;
     }
     .btn{
-      padding: 8px 19px;
+      padding: 7px 8px;
     }
     .hero h1{
       font-size: 2rem;
@@ -719,18 +719,28 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .auth-buttons {
-        display: none !important;
-    }
     
+    .auth-buttons{
+      display: flex !important;
+      margin-left: 64px;
+      gap: 10px;
+      order:1;
+    }
     .header-content {
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     .logo span {
         font-size: 1.2rem;
     }
-    
+    .mobile-menu-toggle{
+      order: 2;
+    }
+    .btn{
+      padding: 9px 12px;
+      font-size:0.8rem;
+    }
 }
 
 /* Page Navigation */
