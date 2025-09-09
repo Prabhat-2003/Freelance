@@ -88,6 +88,36 @@ function setupEventListeners() {
             // In a real app, this would filter services by category
         }
     });
+    // Mobile menu toggle
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const mainNav = document.getElementById('mainNav');
+
+if (mobileMenuToggle && mainNav) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        
+        // Toggle icon between hamburger and close
+        const icon = mobileMenuToggle.querySelector('i');
+        if (mainNav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+    
+    // Close menu when clicking on nav links
+    const navLinks = mainNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('active');
+            const icon = mobileMenuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        });
+    });
+}
 }
 
 // Modal Functions
