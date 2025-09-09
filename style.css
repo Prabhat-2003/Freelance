@@ -722,7 +722,7 @@ footer {
     
     .auth-buttons{
       display: flex !important;
-      margin-left: 64px;
+      margin-left: 12px;
       gap: 10px;
       order:1;
     }
@@ -738,7 +738,7 @@ footer {
       order: 2;
     }
     .btn{
-      padding: 9px 12px;
+      padding: 6px 2px;
       font-size:0.8rem;
     }
 }
