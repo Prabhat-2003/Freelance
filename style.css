@@ -713,6 +713,9 @@ footer {
     .btn{
       padding: 8px 19px;
     }
+    .hero h1{
+      font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
